@@ -15,21 +15,27 @@ import CartProvider from './Contexts/CartContext';
 import { Toaster } from 'react-hot-toast';
 import AuthProvider from './Contexts/AuthContext';
 import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute';
-const router = createBrowserRouter([
-{
-  path: '',
-  element: <Layout />,
-  children: [
-    { index: true, element: <ProtectedRoute><Home /></ProtectedRoute> },
-    { path: 'login', element: <Login /> },
-    { path: 'register', element: <Register /> },
-    { path: 'product/:id', element: <ProtectedRoute><ProductDetails /></ProtectedRoute> },
-    { path: 'search', element: <ProtectedRoute><SearchResults /></ProtectedRoute> },
-    { path: 'shop', element: <ProtectedRoute><Shop /></ProtectedRoute> },
-    { path: 'cart', element: <ProtectedRoute><Cart /></ProtectedRoute> },
-  ]
-}
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: '',
+      element: <Layout />,
+      children: [
+        { index: true, element: <ProtectedRoute><Home /></ProtectedRoute> },
+        { path: 'login', element: <Login /> },
+        { path: 'register', element: <Register /> },
+        { path: 'product/:id', element: <ProtectedRoute><ProductDetails /></ProtectedRoute> },
+        { path: 'search', element: <ProtectedRoute><SearchResults /></ProtectedRoute> },
+        { path: 'shop', element: <ProtectedRoute><Shop /></ProtectedRoute> },
+        { path: 'cart', element: <ProtectedRoute><Cart /></ProtectedRoute> },
+      ],
+    },
+  ],
+  {
+    basename: '/ecommerce', 
+  }
+);
+
 
 const queryClient = new QueryClient();
 
