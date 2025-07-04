@@ -1,0 +1,257 @@
+:root{
+    --mid-color: #3E445A;
+    --light-color: #9B9BB4;
+    --dark-color: #202435;
+    --light-gray: #71778E;
+}
+.shop{
+    font-family: "Dosis", sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+.links{
+    margin-top: 10px;
+    padding-left: 15px;
+    gap: 5px;
+}
+.links span{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: var(--dark-color);
+}
+.links .arrow, .arrow{
+    width: 10px;
+    color: var(--light-color);
+}
+.links p{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: var(--light-color);
+}
+.search-types{
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+.search-types h3{
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+.categories-options{
+    display: flex;
+    justify-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+.categories-options label, .search-types p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: -0.1px;
+    vertical-align: middle;
+    color: var(--light-gray);
+}
+.price .from, .price .to{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19.5px;
+    letter-spacing: -0.1px;
+    vertical-align: middle;
+    color: var(--light-gray);
+}
+.price .between{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    vertical-align: middle;
+    color: var(--light-gray);
+}
+.price input{
+    background-color: #F3F4F7;
+    border-radius: 4px;
+    padding: 10px 16px;
+    width: 100%;
+    outline: none;
+    color: var(--light-gray);
+}
+.products-side .bg-image{
+    border-radius: 7px;
+}
+.products-side h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    line-height: 28.8px;
+    letter-spacing: -0.8px;
+    vertical-align: middle;
+    color: var(--dark-color);
+}
+.products-side h1, .products-side span{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.8px;
+    vertical-align: middle;
+}
+.products-side h1{
+    color: var(--dark-color);
+}
+.products-side span{
+    color: #00B853;
+}
+.products-side p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    vertical-align: middle;
+    color: var(--light-color);margin-top: 8px;
+}
+.products-side .sort{
+    padding: 19px 30px;
+    background-color: #F7F8FD;
+    border-radius: 7px;
+    margin: 20px 0;
+}
+.products-side .sort .p{
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    vertical-align: middle;
+    color: var(--light-color);
+}
+.products-side .sort :first-child{
+    font-weight: 400;
+}
+.products-side .sort :last-child{
+    font-weight: 500;
+}
+.products-side .sort span{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: var(--dark-color);
+}
+.product-card{
+    border: 1px solid #EDEEF5;
+    padding: 20px;
+}
+.product-card .sale{
+    border-radius: 4px;
+    background-color: #35AFA0;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 4px 12px;
+    font-family: "Dosis", sans-serif;
+}
+.product-card .product-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.product-body h2{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19.6px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: var(--dark-color);
+}
+.product-body .available-or{
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 16.5px;
+    letter-spacing: -0.1px;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: #00B853;
+}
+.stars{
+    gap: 4px;
+}
+.solid-star, .regular-star{
+    color: #FFCD00;
+    font-size: 11px;
+}
+.product-body .review{
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18.2px;
+    letter-spacing: -0.1px;
+    vertical-align: middle;
+    color: var(--light-gray);
+    margin: 0;
+}
+.price span{
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    font-size: 15.3px;
+    line-height: 22.95px;
+    letter-spacing: -0.1px;
+    text-align: right;
+    vertical-align: middle;
+    text-decoration: line-through;
+    color: #C2C2D3;
+}
+.price .new-price{
+    font-family: "Dosis", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: -0.1px;
+    vertical-align: middle;
+    color: #D51243;
+    margin: 0;
+}
+.numofproducts span{
+    padding: 0px 10px;
+    font-size: 17px;
+    color: var(--dark-color);
+}
+.numofproducts .minus{
+    background-color: #EDEEF5;
+    border-radius: 17px 0 0 17px;
+}
+.numofproducts .plus{
+    background-color: #FFCD00;
+    border-radius: 0 17px 17px 0;
+}
+.numofproducts input{
+    text-align: center;
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+    border-color: #EDEEF5;
+    font-family: "Inter", sans-serif;
+    outline: none;
+}
+.pagination{
+    font-family: "Inter", sans-serif;
+}
