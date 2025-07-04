@@ -13,11 +13,9 @@
     <div id="root"></div>
 
     <script>
-        // حل لمشكلة 404 في GitHub Pages عند استخدام React Router
         var path = window.location.pathname;
-        if (!path.includes("/ecommerce/index.html")) {
-            window.location.href = "/ecommerce/index.html#" + path;
-        }
+        var corrected = path.replace("/ecommerce", ""); 
+        window.location.replace("/ecommerce/#" + corrected);
     </script>
 </body>
 
