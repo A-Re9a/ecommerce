@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { CartContext } from '../../Contexts/CartContext';
-
+import { Link } from 'react-router-dom';
 export default function Cart() {
     const {
         cartItems,
@@ -56,7 +56,8 @@ export default function Cart() {
                         ))}
                     </div>
 
-                    <div className="mt-6 text-right">
+                    <div className="mt-6 text-right flex justify-between">
+                         <Link to="/checkout" className='w-[200px] text-center rounded-sm bg-blue-800'>checkout</Link>
                         <p className="text-xl font-semibold">
                             Total: <span className="text-blue-600">${totalPrice.toFixed(2)}</span>
                         </p>
