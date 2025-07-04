@@ -13,7 +13,7 @@ export default function Navbar() {
     navigate('/login');
   };
   return (
-    <nav className="flex flex-col md:flex-row justify-between items-center gap-4 p-4 bg-blue-800 text-white shadow-md">
+    <nav className="flex flex-col md:flex-row justify-between items-center gap-4 p-4 bg-red-800 text-white shadow-md">
       <h1 className="text-lg font-bold">Ecommerce</h1>
       <div className="flex items-center gap-4">
         <Link to="/" className="hover:underline">Home</Link>
