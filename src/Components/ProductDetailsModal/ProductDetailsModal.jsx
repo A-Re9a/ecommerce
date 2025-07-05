@@ -40,14 +40,14 @@ export default function ProductDetailsModal({ productId, onClose }) {
                         />
                         <h2 className="text-2xl font-bold mb-2">{data.title}</h2>
                         <p className="text-gray-600 mb-2">{data.description}</p>
-                        <p className="text-blue-600 font-semibold text-lg mb-1">${data.price}</p>
+                        <p className="text-teal-600 font-semibold text-lg mb-1">${data.price}</p>
                         <p className="text-yellow-500">Rating: {data.rating} ⭐</p>
                         <p className="text-gray-500 text-sm mb-4">Stock: {data.stock}</p>
 
                         {/* Add to Cart Button */}
                         <button
                             onClick={handleAddToCart}
-                            className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full"
+                            className="bg-teal-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition w-full"
                         >
                             Add to Cart
                         </button>

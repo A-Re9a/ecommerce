@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
+import logo from "../../assets/Link - Bacola Store.png"
+
 
 export default function Register() {
   const [form, setForm] = useState({ username: '', password: '' });
@@ -25,9 +27,17 @@ export default function Register() {
     navigate('/login');
   };
 
-  return (
-    <div className="max-w-md mx-auto mt-20 p-6 bg-white shadow rounded">
-      <h2 className="text-xl font-bold mb-4 text-center">Register</h2>
+  return (<>
+   <div className='bg-[#35AFA0] text-center w-[100%] px-0'>
+
+<p className='text-white '>Due to current circumstances, there may be slight delays in order processing</p>
+</div>
+<div className='flex justify-center p-8 m-auto'>
+<img src={logo}></img>
+
+</div>
+    <div className="max-w-md mx-auto bg-gradient-to-r from-blue-200 to-teal-100 p-6 bg-white shadow rounded">
+      <h2 className="text-xl font-bold mb-4 text-center bg-transparent p-4 rounded-md text-teal-600">Register</h2>
       <form onSubmit={handleRegister} className="space-y-4">
         <input
           type="text"
@@ -47,7 +57,7 @@ export default function Register() {
         />
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700"
+          className="w-full bg-teal-500 text-white p-2 rounded font-semibold hover:bg-teal-400"
         >
           Register
         </button>
@@ -59,5 +69,5 @@ export default function Register() {
         </Link>
       </p>
     </div>
-  );
+ </> );
 }

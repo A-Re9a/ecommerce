@@ -11,6 +11,7 @@ export default function ProductContextProvider({ children }) {
 
     const getAllProducts = async () => {
         const response = await axios.get("https://dummyjson.com/products");
+        console.log(response.data.products)
         return response.data.products;
     };
 

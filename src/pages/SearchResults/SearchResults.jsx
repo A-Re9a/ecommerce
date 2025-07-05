@@ -22,7 +22,7 @@ export default function SearchResults() {
     if (!query) return <p className="text-center mt-10">Please enter a search term.</p>;
     if (isLoading) return <p className="text-center mt-10">Loading results...</p>;
     if (error) return <p className="text-center text-red-500 mt-10">Error: {error.message}</p>;
-    if (data?.length === 0) return <p className="text-center mt-10">No results found for "{query}".</p>;
+    if (data?.length === 0) return <p className="text-center mt-80">No results found for "{query}".</p>;
 
     return (
         <div className="p-6">
