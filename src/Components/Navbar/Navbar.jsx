@@ -60,18 +60,9 @@ export default function Navbar() {
       }, []);
 
   return (
+
     <>
  
-
-
-
-
-
-
-
-
-
-
  <nav className={`flex flex-col justify-between items-center m-auto lg:gap-4 gap-3 fixed lg:p-0 p-2 left-0 right-0 top-0 z-20  transition-all duration-300 
  ${isScrolled ? 'bg-gradient-to-r from-blue-100 to-green-300 shadow-lg' : 'bg-white shadow-md'}`}>
  <div className='bg-[#35AFA0] text-center w-[100%] px-0 hidden lg:block '>

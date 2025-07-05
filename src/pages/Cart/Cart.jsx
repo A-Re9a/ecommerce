@@ -2,7 +2,6 @@ import { useContext } from 'react';
 import { CartContext } from '../../Contexts/CartContext';
 import { Link } from 'react-router-dom';
 import { ShoppingBag } from "lucide-react";
-
 export default function Cart() {
     const {
         cartItems,
@@ -72,7 +71,6 @@ export default function Cart() {
                         ))}
                     </div>
 
-                  
                 </>
             )}
         </div>

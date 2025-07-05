@@ -9,7 +9,7 @@ export default function PaginatedProductsProvider({ children }) {
     const [searchTerm, setSearchTerm] = useState('');
     const [selectedCategory, setSelectedCategory] = useState('');
 
-    const limit = 10;
+    const limit = 12;
     const skip = (page - 1) * limit;
 
     const fetchProducts = async () => {
