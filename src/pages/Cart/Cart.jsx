@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { CartContext } from '../../Contexts/CartContext';
 import { Link } from 'react-router-dom';
+import { ShoppingBag } from "lucide-react";
 export default function Cart() {
     const {
         cartItems,
@@ -9,9 +10,23 @@ export default function Cart() {
         totalPrice,
     } = useContext(CartContext);
 
-    return (
+    return ( <>   
+
+
+         <h1 className="mt-64 text-2xl m-auto w-48 rounded-md text-teal-700 font-bold mb-4 text-center bg-gradient-to-l p-4 from-blue-100 to-green-200">Your Cart <i className="fa-solid fa-cart-shopping text-teal-600" />
+</h1>
+            
+          
+         
+         <div className=" flex justify-between items-center m-auto w-[94%]">
+                         <Link to="/checkout" className='w-[200px] text-center text-white rounded-md p-2 bg-teal-500'>checkout</Link>
+                        <p className="text-xl font-semibold">
+                            Total price : <span className="text-teal-500">${totalPrice.toFixed(2)}</span>
+                        </p>
+                    </div>
+
+
         <div className="p-6">
-            <h1 className="text-2xl font-bold mb-4 text-center">Your Cart</h1>
 
             {cartItems.length === 0 ? (
                 <p className="text-center text-gray-500">Your cart is empty.</p>
@@ -21,9 +36,9 @@ export default function Cart() {
                         {cartItems.map((item) => (
                             <div
                                 key={item.id}
-                                className="flex items-center justify-between bg-white shadow rounded p-4"
+                                className="flex items-center justify-between bg-white shadow rounded p-4 hover:bg-gradient-to-l from-blue-100 to-green-200"
                             >
-                                <div className="flex items-center gap-4">
+                                <div className="flex items-center gap-4 ">
                                     <img
                                         src={item.thumbnail}
                                         alt={item.title}
@@ -31,7 +46,7 @@ export default function Cart() {
                                     />
                                     <div>
                                         <h2 className="font-semibold">{item.title}</h2>
-                                        <p className="text-blue-600">${item.price}</p>
+                                        <p className="text-teal-500 font-semibold">${item.price}</p>
                                     </div>
                                 </div>
 
@@ -56,14 +71,8 @@ export default function Cart() {
                         ))}
                     </div>
 
-                    <div className="mt-6 text-right flex justify-between">
-                         <Link to="/checkout" className='w-[200px] text-center rounded-sm bg-blue-800'>checkout</Link>
-                        <p className="text-xl font-semibold">
-                            Total: <span className="text-blue-600">${totalPrice.toFixed(2)}</span>
-                        </p>
-                    </div>
                 </>
             )}
         </div>
-    );
+    </>);
 }

@@ -11,7 +11,10 @@ export default function CategoriesProvider({ children }) {
         queryFn: () =>
             axios
                 .get('https://dummyjson.com/products/categories')
-                .then((res) => res.data),
+                .then((res) => {
+console.log(res.data)
+                    return res.data}),
+                
     });
 
     if (isLoading) return <LoadingScreen />;

@@ -18,10 +18,10 @@ export default function SearchInput() {
                 type="text"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder="search products..."
-                className="w-full p-2 rounded text-black"
+                placeholder="Search for Products, fruit, meat, eggs .etc..."
+                className="w-full p-2 rounded text-black  bg-gray-200"
             />
-            <button type="submit" className="bg-white text-blue-800 font-semibold px-4 py-2 rounded">
+            <button type="submit" className="text-white bg-[#35AFA0] font-semibold px-4 py-2 rounded">
                 Search
             </button>
         </form>

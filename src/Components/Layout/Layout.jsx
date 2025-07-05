@@ -1,15 +1,24 @@
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
-import { Outlet } from 'react-router-dom';
+import { Outlet , useLocation } from 'react-router-dom';
 
 export default function Layout() {
+
+
+    const location = useLocation();
+    const hideNavbarRoutes = ['/login', '/register']; // زود المسارات اللي مش عايز فيها navbar
+    const shouldHideNavbar = hideNavbarRoutes.includes(location.pathname);
+
+
+
     return (
         <>
-            <Navbar />
-            <main className="min-h-screen">
-                <Outlet />
-            </main>
-            <Footer />
+        
+               {!shouldHideNavbar && <Navbar />}
+               <div className=''>
+      <Outlet />
+      </div>
+      {!shouldHideNavbar && <Footer />}
         </>
     );
 }
