@@ -18,7 +18,7 @@ function CheckOut() {
     "w-full p-3 mb-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500";
 
   return (
-    <div className="flex flex-col lg:flex-row w-full px-[100px] gap-6">
+    <div className="flex flex-col lg:flex-row w-full px-[100px] gap-6 pt-[300px]">
       {/* Form Section */}
       <div className="w-full lg:w-2/3 xl:w-[60%] flex flex-wrap px-4 py-6">
         <form
