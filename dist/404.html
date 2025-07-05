@@ -20,19 +20,6 @@
     <div id="root"></div>
 
     <script>
-      var path = window.location.pathname;
-
-      // Check if the path does not include 'index.html'
-      if (!path.includes("/ecommerce/index.html")) {
-        // Redirect to the index.html with the current path as a hash
-        window.location.href = "/ecommerce/index.html#" + path;
-      }
-
-      // Redirect to the home page
-      // This line is added to ensure that the user is redirected to the home page
-      // if they try to access the 404 page directly.
-      // You can remove this line if you want to keep the 404 page accessible.
-      // window.location.replace("/ecommerce/index.html#/");
       window.location.replace("/ecommerce/#/");
     </script>
   </body>
