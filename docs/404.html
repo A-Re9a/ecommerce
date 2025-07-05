@@ -11,14 +11,11 @@
 
 <body>
     <div id="root"></div>
-
     <script>
         var path = window.location.pathname;
-        if (!path.includes("/ecommerce/index.html")) {
-            window.location.href = "/ecommerce/index.html#" + path;
-        }
+        var corrected = path.replace("/ecommerce", "");
+        window.location.replace("/ecommerce/#" + corrected);
     </script>
-    
 </body>
 
 </html>
