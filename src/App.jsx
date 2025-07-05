@@ -16,6 +16,7 @@ import { Toaster } from 'react-hot-toast';
 import AuthProvider from './Contexts/AuthContext';
 import ProtectedRoute from './Components/ProtectedRoute/ProtectedRoute';
 import CheckOut from './pages/Checkout/CheckOut';
+import Contact from './pages/Contact/Contact';
 const router = createBrowserRouter(
   [
     {
@@ -30,8 +31,7 @@ const router = createBrowserRouter(
         { path: 'shop', element: <ProtectedRoute><Shop /></ProtectedRoute> },
         { path: 'cart', element: <ProtectedRoute><Cart /></ProtectedRoute> },
         { path: 'contact', element: <ProtectedRoute><Contact /></ProtectedRoute> },
-        { path: 'about', element: <ProtectedRoute><About /></ProtectedRoute> },
-      { path: 'checkout', element:<CheckOut/> },
+        { path: 'checkout', element: <ProtectedRoute><CheckOut /></ProtectedRoute> },
       ],
     },
   ],

@@ -44,7 +44,7 @@ export default function Shop() {
     const [isOpenPrice, setIsOpenPrice]=useState(false);
     const [isOpenStock, setIsOpenStock]=useState(false);
     return(
-        <div className='shop'>
+        <div className='shop pt-[300px] '>
             <div className='links mb-[20px] lg:mb-[45px] flex items-center'>
                 <Link to="/"><span>home</span></Link><IoIosArrowForward className='arrow'/><p>Products</p>
             </div>
