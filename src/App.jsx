@@ -28,6 +28,8 @@ const router = createBrowserRouter(
         { path: 'search', element: <ProtectedRoute><SearchResults /></ProtectedRoute> },
         { path: 'shop', element: <ProtectedRoute><Shop /></ProtectedRoute> },
         { path: 'cart', element: <ProtectedRoute><Cart /></ProtectedRoute> },
+        { path: 'contact', element: <ProtectedRoute><Contact /></ProtectedRoute> },
+        { path: 'about', element: <ProtectedRoute><About /></ProtectedRoute> },
       ],
     },
   ],
